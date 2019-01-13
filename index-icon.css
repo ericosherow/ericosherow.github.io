@@ -1,0 +1,148 @@
+/*eric animation*/
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    text-align: center; 
+    background: url() no-repeat 50% 50%;
+    height: 100vh; 
+    display: table;
+}
+
+
+.text-wrapper-top {
+    position: fixed;
+    top: 20%;
+    left: 75%;
+    transform: translate(-70%,-70%);
+    width: 30%;
+}
+
+.text-wrapper-middle {
+    position: fixed;
+    top: 55%;
+    left: 75%;
+    transform: translate(-70%,-70%);
+    width: 30%;
+}
+.text-wrapper-bottom{
+    position: fixed;
+    top: 90%;
+    left: 75%;
+    transform: translate(-70%,-70%);
+    width: 30%;
+}
+.flower-wrapper{
+    position: absolute;
+    top: 15%;
+    left: 1%;
+    transform: translate(-50%,-50%);
+    width: 30%;
+}
+
+/*/* hover */
+.text-wrapper-top:hover {
+  opacity: 0.7;
+}
+
+.text-wrapper-middle:hover{
+    opacity: 0.7;
+}
+
+.text-wrapper-bottom:hover{
+    opacity: 0.7;
+}
+
+.image-text {
+    position: absolute;
+    top: 50%;
+    left: 90%;
+    transform: translate(-50%,-50%);
+    width: 12%;
+}
+
+.image-text-middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 15%;
+
+}
+.image-text-left {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(-50%,-50%);
+    width: 14%;
+}
+
+.image-left {
+    position: absolute;
+    top: 75%;
+    left: 20%;
+    transform: translate(-50%,-50%);
+    width: 33%;
+}
+.image-middle {
+    position: absolute;
+    top: 75%;
+    left: 40%;
+    transform: translate(-50%,-50%);
+    width: 33%;
+}
+
+.image-text:hover {
+   opacity: 0.7;
+}
+.image-text-middle:hover {
+    opacity: 0.7;
+}
+.image-text-left:hover {
+    opacity: 0.7;
+}
+
+
+
+
+
+
+/*/*animations*/
+
+
+path {
+    stroke: #ff00b4;
+    fill: #ff00b4;
+    stroke-dasharray: 1800;
+    opacity: 10;
+    animation: animate 3s cubic-bezier(0,0.23,1,.1);
+
+}
+
+@keyframes animate {
+     0% {
+        opacity: 0;
+        fill: none; 
+        stroke-dashoffset: 1800;
+     }
+     30% {
+        opacity: 10;
+        fill: none;
+        stroke-dashoffset: 1800; 
+     }
+
+    
+     90% {
+        fill: rgba(255,255,255,0);
+     }
+     100% {
+        opacity: 10;
+        /*fill: rgba(255,0,180);*/
+        stroke-dashoffset: 0; 
+     }
+}

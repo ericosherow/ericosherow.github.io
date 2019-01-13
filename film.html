@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>film</title>
+</head>
+<body>
+
+
+<head>
+  <title>film</title>
+  <meta charset="UTF-8">
+
+<style>
+
+    .video-responsive{
+        overflow:hidden;
+        padding-bottom:56.25%;
+        position:relative;
+        height:0;
+    }
+    .video-responsive iframe{
+        left:0;
+        top:0;
+        height:100%;
+        width:100%;
+        position:absolute;
+    }
+   .button {
+  background-color: #4CAF50; 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  /*text-align: left;*/
+  text-decoration: none;
+  display: block;
+  font-size: 16px;
+  }
+
+  .footer{
+    position: absolute;
+    background: black;
+    top: 97%;
+    width: 100%;
+    padding: 24px;
+  }
+
+  .footer-container{
+    width: 960px;   
+  }
+
+  /* Dropdown Button */
+.dropbtn {
+  background-color: white;
+  color: transparent;
+  padding: 16px;
+  font-size: 16px;
+  border: black;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: fixed;
+  top: 0%;
+  left: 94%;
+  transition: 1.0s;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  opacity: 0.7;
+  right: 0;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  font-family:Simplifica;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: grey;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown bar when the dropdown content is shown */
+.dropdown:hover .bar1 {transition:0.2s;background-color:#00b4ff;}
+.dropdown:hover .bar2 {transition:0.5s;background-color:#00b4ff;}
+.dropdown:hover .bar3 {transition:0.8s;background-color:#00b4ff;}
+
+
+/*menu bar Container*/
+.container {
+  display: inline-block;
+  cursor: pointer;
+}
+/*subbars*/
+.bar1, .bar2, .bar3 {
+  width: 40px;
+  height: 3px;
+  background-color: #FF00B4;
+  margin: 8px 0;
+  transition: 0.4s;
+}
+
+.line {
+  height="210"; 
+  width="500";
+  stroke:rgb(255,0,0);
+  stroke-width:2;  
+}
+
+
+/* Rotate first bar */
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+  transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+  opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+  transform: rotate(45deg) translate(-8px, -8px) ;
+}
+
+</style>
+
+<body style="background-color: white">
+
+  
+
+<div class="video-responsive">
+    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/0uBsDhrerXc?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+<div class="container" onclick="myFunction(this)">
+  <div class="dropdown">
+  <button class="dropbtn">
+    <div class="bar1"></div>
+    <div class="bar2"></div>
+    <div class="bar3"></div>
+  </button>
+  <div class="dropdown-content">
+    <div class="nav">
+      <div class="container">
+      <ul class="pull-right">
+        <a href="work.html" sytle="font:Simplifica">work</a>
+        <a href="info.html">info</a>
+        <a href="https://github.com/ericosherow.html">github</a>
+        </ul>
+       </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+
+</html>

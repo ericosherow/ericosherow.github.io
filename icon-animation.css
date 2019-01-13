@@ -1,0 +1,66 @@
+/*eric animation*/
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    text-align: center; 
+    background: url() no-repeat 50% 50%;
+    height: 100vh; 
+    display: table;
+}
+
+.wrapper-icon{
+    position: absolute;
+    top: 84.08%;
+    left: 7%;
+    transform: translate(-50%,-50%);
+    width: 5%;
+
+}
+.wrapper-icon-right {
+    position: absolute;
+    top: 87%;
+    left: 16%;
+    transform: translate(-50%,-50%);
+    width: 5%;
+}
+
+
+/*/* hover */
+.wrapper-icon:hover {
+  opacity: 0.7;
+}
+
+.wrapper-icon-right:hover{
+    opacity: 0.7;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}

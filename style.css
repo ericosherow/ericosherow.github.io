@@ -1,0 +1,137 @@
+/*eric animation*/
+html {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	text-align: center; 
+	background: url() no-repeat 50% 50%;
+	height: 100vh; 
+	display: table;
+}
+.wrapper {
+		position: absolute;
+		top: 45%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+		width: 60%;
+}
+.eric-wrap{
+	position: fixed;
+	top: 45%;
+	left: 74%;
+	transform: translate(-50%,-50%);
+	width: 20%;
+}
+
+
+path {
+	stroke: #ff00b4;
+	fill: #ff00b4;
+	stroke-dasharray: 1800;
+	opacity: 10;
+	animation: animate 3s cubic-bezier(0,0.23,1,.1);
+
+}
+
+@keyframes animate {
+	 0% {
+	 	opacity: 0;
+	 	fill: none; 
+	 	stroke-dashoffset: 1800;
+	 }
+	 30% {
+	 	opacity: 10;
+	 	fill: none;
+		stroke-dashoffset: 1800; 
+	 }
+
+	
+	 90% {
+	 	fill: rgba(255,255,255,0);
+	 }
+	 100% {
+	 	opacity: 10;
+	 	fill: rgba(255,0,180);
+	 	stroke-dashoffset: 0; 
+	 }
+}
+/*buttons*/
+
+.wrapper-icon{
+	position: absolute;
+		top: 30%;
+		left: 10%;
+		transform: translate(-50%,-50%);
+		width: 5%;
+
+}
+.wrapper-icon-right {
+	position: absolute;
+	top: 50%;
+	left: 10%;
+	transform: translate(-50%,-50%);
+	width: 5%;
+
+}
+
+.flower-wrapper{
+	position: absolute;
+	top: 72%;
+	left: 85%;
+	transform: translate(-50%,-50%);
+	width: 30%;	
+}
+
+.wrapper:hover {
+	opacity: 0.7;
+}
+/*/* hover */
+.wrapper-icon:hover {
+  opacity: 0.7;
+}
+.wrapper-icon-right:hover{
+	opacity: 0.7;
+}
+
+
+.text-wrapper-top {
+    position: absolute;
+    top: 20%;
+    left: 90%;
+    transform: translate(-70%,-70%);
+    width: 30%;
+}
+
+.text-wrapper-middle {
+    position: absolute;
+    top: 55%;
+    left: 90%;
+    transform: translate(-70%,-70%);
+    width: 30%;
+}
+.text-wrapper-bottom{
+    position: absolute;
+    top: 90%;
+    left: 90%;
+    transform: translate(-70%,-70%);
+    width: 30%;
+}
+
+/*/* hover */
+.text-wrapper-top:hover {
+  opacity: 0.7;
+}
+
+.text-wrapper-middle:hover{
+    opacity: 0.7;
+}
+
+.text-wrapper-bottom:hover{
+    opacity: 0.7;
+}
+

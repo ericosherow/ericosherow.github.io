@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>paint</title>
+</head>
+<body>
+
+
+<head>
+  <title>My First HTML</title>
+  <meta charset="UTF-8">
+
+  <style>
+
+
+  body{
+    width: 100%;
+  }
+
+ .button {
+  background-color: #4CAF50; 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  /*text-align: left;*/
+  text-decoration: none;
+  display: block;
+  font-size: 16px;
+  }
+
+  .footer{
+    position: absolute;
+    background: black;
+    top: 97%;
+    width: 100%;
+    padding: 24px;
+  }
+
+  .footer-container{
+    width: 960px;   
+  }
+
+  /* Dropdown Button */
+.dropbtn {
+  background-color: transparent;
+  color: transparent;
+  padding: 16px;
+  font-size: 16px;
+  border: black;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: fixed;
+  top: 1%;
+  left: 92.5%;
+  transition: 1.0s;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  opacity: 0.7;
+  right: 0;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  font-family:Simplifica;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: grey;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown bar when the dropdown content is shown */
+.dropdown:hover .bar1 {transition:0.2s;background-color:#00b4ff;}
+.dropdown:hover .bar2 {transition:0.5s;background-color:#00b4ff;}
+.dropdown:hover .bar3 {transition:0.8s;background-color:#00b4ff;}
+
+
+/*menu bar Container*/
+.container {
+  display: inline-block;
+  cursor: pointer;
+}
+/*subbars*/
+.bar1, .bar2, .bar3 {
+  width: 40px;
+  height: 3px;
+  background-color: #FF00B4;
+  margin: 8px 0;
+  transition: 0.4s;
+}
+
+.line {
+  height="210"; 
+  width="500";
+  stroke:rgb(255,0,0);
+  stroke-width:2;  
+}
+
+
+/* Rotate first bar */
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+  transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+  opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+  transform: rotate(45deg) translate(-8px, -8px) ;
+}
+
+.titleclass {
+  text-align:right;
+  color:black;
+  font-family:Simplifica;
+  font-size:450%;
+}
+
+.image-left{    
+    display: block;
+    width: 100%;
+}
+.image-right{  
+    /*display: block;*/
+    
+    width: 50%;
+}
+
+/*.image-left:hover{
+  opacity: 0.7;
+}*/
+
+.image-middle{
+
+}
+
+.image-right{
+
+}
+
+.eric-wrap:hover
+{
+  fill:black;
+}
+.hover-container {
+  position: relative;
+  width: 50%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 65;
+  right: 0;
+  opacity: 0;
+  transition: .8s ease;
+  background-color: white;
+}
+
+.hover-container:hover .overlay {
+  opacity: 0.4;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+</style>
+
+<body style="background-color:#cec5b8;">
+<!-- 
+<footer> 
+  <div class="footer-container">
+    stuff
+  </div>
+
+
+<images-->
+<div class="hover-container">
+  <img src="art/PearonWall.jpeg" class="image-left">
+  <div class="overlay">
+    <div class="titleclass"> Pear on Wall <br> Oil on Canvas <br> 32x24</div>
+  </div>
+</div>
+
+<div class="hover-container">
+<img src="art/pears.jpeg" class="image-left">
+<div class="overlay">
+    <div class="titleclass"> Two Pears on Table <br> Oil on Canvas <br> 32x24</div> </div>
+  </div>
+</div>
+
+<div class="hover-container">
+<img src="art/mango.jpeg" class="image-left">  
+<div class="overlay">
+    <div class="titleclass"> Mango on Table <br> Oil on Canvas <br> 32x24</div></div>
+  </div>
+</div>
+
+<div class="hover-container">
+<img src="art/cucumber.jpeg" class="image-left">  
+<div class="overlay">
+    <div class="titleclass"> Cucumber in Bowl <br> Oil on Canvas <br> 32x24</div> </div>
+  </div>
+</div>
+
+<div class="hover-container">
+<img src="art/Wrist.jpeg" class="image-left">
+<div class="overlay">
+    <div class="titleclass"> Self Portrait: Wrist <br> Oil on Canvas <br> 12x6</div> </div>
+  </div>
+</div>
+
+<div class="hover-container">
+<img src="art/triadself.jpeg" class="image-left">  
+<div class="overlay">
+    <div class="titleclass"> Triad Self <br> Oil on Canvas <br> 32x24</div> </div>
+  </div>
+</div>
+
+<div class="hover-container">
+<img src="art/self.jpeg" class="image-left">
+<div class="overlay">
+    <div class="titleclass"> Self Portrait <br> Oil on Canvas <br> 32x24</div> </div>
+  </div>
+</div>
+
+
+
+
+<!-- <img src="art/Wrist.jpeg" class="image-left">
+<img src="art/mango.jpeg" class="image-left">  
+<img src="art/self.jpeg" class="image-left">
+ -->
+
+
+
+<!-- <header> -->
+<!-- <div class="header">
+  <div class="header-container"> -->
+  <div class="container" onclick="myFunction(this)">
+  <div class="dropdown">
+  <button class="dropbtn">
+    <div class="bar1"></div>
+    <div class="bar2"></div>
+    <div class="bar3"></div>
+  </button>
+  <div class="dropdown-content">
+    <div class="nav">
+      <div class="container">
+      <ul class="pull-right">
+        <a href="work.html" sytle="font:Simplifica">work</a>
+        <a href="info.html">info</a>
+        <a href="https://github.com/ericosherow">github</a>
+        </ul>
+       </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- </div>
+</div> header  -->
+
+
+
+
+<html>
+  <!-- <a href="index.html" class="eric-wrap" style="text-decoration: none"> -->
+  <head>
+    <title> SVG Stroke Animation</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+      <div class="eric-wrap">
+
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+   viewBox="0 0 506.72 345.1" style="enable-background:new 0 0 506.72 345.1;" xml:space="preserve">
+<style type="text/css">
+  .st1{fill:none;stroke:#FF00B4; stroke-width: 1;stroke-miterlimit:10;}
+</style>
+<g>
+  <path class="st1" d="M74.4,107.42c-1.2,0.4-3.2,1.17-6,2.3c-2.8,1.13-5.83,2.3-9.1,3.5c-3.27,1.2-6.43,2.4-9.5,3.6
+    c-3.07,1.2-5.47,2.07-7.2,2.6v17c0,2.8,0.53,5.43,1.6,7.9c1.07,2.47,2.5,4.6,4.3,6.4c1.8,1.8,3.93,3.23,6.4,4.3
+    c2.47,1.07,5.1,1.6,7.9,1.6c2.8,0,5.43-0.53,7.9-1.6c2.47-1.07,4.6-2.5,6.4-4.3c1.8-1.8,3.23-3.93,4.3-6.4
+    c1.07-2.47,1.6-5.1,1.6-7.9h6.6c0,3.73-0.7,7.23-2.1,10.5c-1.4,3.27-3.3,6.1-5.7,8.5c-2.4,2.4-5.23,4.3-8.5,5.7
+    c-3.27,1.4-6.77,2.1-10.5,2.1c-3.73,0-7.23-0.7-10.5-2.1c-3.27-1.4-6.1-3.3-8.5-5.7c-2.4-2.4-4.3-5.23-5.7-8.5
+    c-1.4-3.27-2.1-6.77-2.1-10.5v-47c0-3.73,0.7-7.23,2.1-10.5c1.4-3.27,3.3-6.1,5.7-8.5c2.4-2.4,5.23-4.3,8.5-5.7
+    c3.27-1.4,6.77-2.1,10.5-2.1c3.73,0,7.23,0.7,10.5,2.1c3.27,1.4,6.1,3.3,8.5,5.7c2.4,2.4,4.3,5.23,5.7,8.5
+    c1.4,3.27,2.1,6.7,2.1,10.3v0.2C89.6,97.68,84.53,103.68,74.4,107.42z M62.8,69.22c-2.8,0-5.43,0.53-7.9,1.6
+    c-2.47,1.07-4.6,2.5-6.4,4.3c-1.8,1.8-3.23,3.93-4.3,6.4c-1.07,2.47-1.6,5.1-1.6,7.9v23c2-0.8,4.47-1.77,7.4-2.9
+    c2.93-1.13,5.87-2.23,8.8-3.3c2.93-1.07,5.63-2.07,8.1-3c2.47-0.93,4.23-1.6,5.3-2c2.4-0.93,4.8-2.33,7.2-4.2
+    c2.4-1.87,3.6-4.47,3.6-7.8c0-2.8-0.53-5.4-1.6-7.8c-1.07-2.4-2.5-4.5-4.3-6.3c-1.8-1.8-3.93-3.23-6.4-4.3
+    C68.23,69.75,65.6,69.22,62.8,69.22z"/>
+  <path class="st1" d="M147.8,62.62v6.6H140c-2.8,0-5.4,0.53-7.8,1.6c-2.4,1.07-4.53,2.5-6.4,4.3c-1.87,1.8-3.33,3.93-4.4,6.4
+    c-1.07,2.47-1.6,5.1-1.6,7.9v23.4v49.4h-6.6v-49.4v-23.4v-19.2h-6.6v-6.6h6.6h6.6v6.6v1.6c5.07-5.87,11.6-8.93,19.6-9.2H147.8z"/>
+  <path class="st1" d="M170.6,62.02h6.6v6.8v92h-6.6v-92H164v-6.8H170.6z M172.2,39.22c-1.47,0-2.67-0.47-3.6-1.4
+    c-0.93-0.93-1.4-2.13-1.4-3.6c0-1.47,0.47-2.67,1.4-3.6c0.93-0.93,2.13-1.4,3.6-1.4c1.33,0,2.5,0.47,3.5,1.4
+    c1,0.93,1.5,2.13,1.5,3.6c0,1.47-0.5,2.67-1.5,3.6C174.7,38.75,173.53,39.22,172.2,39.22z"/>
+  <path class="st1" d="M228,156.62c2.8,0,5.43-0.53,7.9-1.6c2.47-1.07,4.6-2.5,6.4-4.3c1.8-1.8,3.23-3.93,4.3-6.4
+    c1.07-2.47,1.6-5.1,1.6-7.9h6.6c0,3.73-0.7,7.23-2.1,10.5c-1.4,3.27-3.3,6.1-5.7,8.5c-2.4,2.4-5.23,4.3-8.5,5.7
+    c-3.27,1.4-6.77,2.1-10.5,2.1c-3.73,0-7.23-0.7-10.5-2.1c-3.27-1.4-6.1-3.3-8.5-5.7c-2.4-2.4-4.3-5.23-5.7-8.5
+    c-1.4-3.27-2.1-6.77-2.1-10.5v-47c0-3.73,0.7-7.23,2.1-10.5c1.4-3.27,3.3-6.1,5.7-8.5c2.4-2.4,5.23-4.3,8.5-5.7
+    c3.27-1.4,6.77-2.1,10.5-2.1c3.73,0,7.23,0.7,10.5,2.1c3.27,1.4,6.1,3.3,8.5,5.7c2.4,2.4,4.3,5.23,5.7,8.5
+    c1.4,3.27,2.1,6.77,2.1,10.5h-6.6c0-2.8-0.53-5.43-1.6-7.9c-1.07-2.47-2.5-4.6-4.3-6.4c-1.8-1.8-3.93-3.23-6.4-4.3
+    c-2.47-1.07-5.1-1.6-7.9-1.6c-2.8,0-5.43,0.53-7.9,1.6c-2.47,1.07-4.6,2.5-6.4,4.3c-1.8,1.8-3.23,3.93-4.3,6.4
+    c-1.07,2.47-1.6,5.1-1.6,7.9v47c0,2.8,0.53,5.43,1.6,7.9c1.07,2.47,2.5,4.6,4.3,6.4c1.8,1.8,3.93,3.23,6.4,4.3
+    C222.56,156.08,225.2,156.62,228,156.62z"/>
+  <path class="st1" d="M26.8,294.22c-3.73,0-7.23-0.7-10.5-2.1c-3.27-1.4-6.1-3.3-8.5-5.7c-2.4-2.4-4.3-5.23-5.7-8.5
+    c-1.4-3.27-2.1-6.77-2.1-10.5v-47c0-3.73,0.7-7.23,2.1-10.5c1.4-3.27,3.3-6.1,5.7-8.5c2.4-2.4,5.23-4.3,8.5-5.7
+    c3.27-1.4,6.77-2.1,10.5-2.1c3.73,0,7.23,0.7,10.5,2.1c3.27,1.4,6.1,3.3,8.5,5.7c2.4,2.4,4.3,5.23,5.7,8.5
+    c1.4,3.27,2.1,6.77,2.1,10.5v47c0,3.73-0.7,7.23-2.1,10.5c-1.4,3.27-3.3,6.1-5.7,8.5c-2.4,2.4-5.23,4.3-8.5,5.7
+    C34.03,293.52,30.53,294.22,26.8,294.22z M26.8,200.22c-2.8,0-5.43,0.53-7.9,1.6c-2.47,1.07-4.6,2.5-6.4,4.3
+    c-1.8,1.8-3.23,3.93-4.3,6.4c-1.07,2.47-1.6,5.1-1.6,7.9v47c0,2.8,0.53,5.43,1.6,7.9c1.07,2.47,2.5,4.6,4.3,6.4s3.93,3.23,6.4,4.3
+    c2.47,1.07,5.1,1.6,7.9,1.6c2.8,0,5.43-0.53,7.9-1.6c2.47-1.07,4.6-2.5,6.4-4.3c1.8-1.8,3.23-3.93,4.3-6.4
+    c1.07-2.46,1.6-5.1,1.6-7.9v-47c0-2.8-0.53-5.43-1.6-7.9c-1.07-2.47-2.5-4.6-4.3-6.4c-1.8-1.8-3.93-3.23-6.4-4.3
+    C32.23,200.75,29.6,200.22,26.8,200.22z"/>
+  <path class="st1" d="M100,240.81c2.93,1.47,5.9,3.04,8.9,4.7c3,1.67,5.7,3.57,8.1,5.7c2.4,2.13,4.37,4.5,5.9,7.1
+    c1.53,2.6,2.3,5.63,2.3,9.1c0,3.73-0.7,7.23-2.1,10.5c-1.4,3.27-3.3,6.1-5.7,8.5c-2.4,2.4-5.23,4.3-8.5,5.7
+    c-3.27,1.4-6.77,2.1-10.5,2.1c-3.73,0-7.23-0.7-10.5-2.1c-3.27-1.4-6.1-3.3-8.5-5.7c-2.4-2.4-4.3-5.23-5.7-8.5
+    c-1.4-3.27-2.1-6.77-2.1-10.5h6.6c0,2.8,0.53,5.43,1.6,7.9c1.07,2.47,2.5,4.6,4.3,6.4s3.93,3.23,6.4,4.3c2.47,1.07,5.1,1.6,7.9,1.6
+    c2.8,0,5.43-0.53,7.9-1.6c2.47-1.07,4.6-2.5,6.4-4.3c1.8-1.8,3.23-3.93,4.3-6.4c1.07-2.46,1.6-5.1,1.6-7.9c0-2.4-0.6-4.57-1.8-6.5
+    c-1.2-1.93-2.8-3.7-4.8-5.3c-2-1.6-4.3-3.1-6.9-4.5c-2.6-1.4-5.3-2.83-8.1-4.3c-3.07-1.46-6.1-3.03-9.1-4.7
+    c-3-1.67-5.7-3.53-8.1-5.6c-2.4-2.07-4.37-4.4-5.9-7c-1.53-2.6-2.3-5.63-2.3-9.1c0-3.73,0.7-7.23,2.1-10.5
+    c1.4-3.27,3.3-6.1,5.7-8.5c2.4-2.4,5.23-4.3,8.5-5.7c3.27-1.4,6.77-2.1,10.5-2.1c3.73,0,7.23,0.7,10.5,2.1
+    c3.27,1.4,6.1,3.3,8.5,5.7c2.4,2.4,4.3,5.23,5.7,8.5c1.4,3.27,2.1,6.77,2.1,10.5h-6.6c0-2.8-0.53-5.43-1.6-7.9
+    c-1.07-2.47-2.5-4.6-4.3-6.4c-1.8-1.8-3.93-3.23-6.4-4.3c-2.47-1.07-5.1-1.6-7.9-1.6c-2.8,0-5.43,0.53-7.9,1.6
+    c-2.47,1.07-4.6,2.5-6.4,4.3c-1.8,1.8-3.23,3.93-4.3,6.4c-1.07,2.47-1.6,5.1-1.6,7.9c0,2.4,0.6,4.57,1.8,6.5
+    c1.2,1.93,2.83,3.7,4.9,5.3c2.07,1.6,4.4,3.1,7,4.5C94.5,238.12,97.2,239.48,100,240.81z"/>
+  <path class="st1" d="M170,193.62c3.73,0,7.23,0.7,10.5,2.1c3.27,1.4,6.1,3.3,8.5,5.7c2.4,2.4,4.3,5.23,5.7,8.5
+    c1.4,3.27,2.1,6.77,2.1,10.5v23.4v49.4h-6.6v-49.4v-23.4c0-2.8-0.53-5.43-1.6-7.9c-1.07-2.47-2.5-4.6-4.3-6.4
+    c-1.8-1.8-3.93-3.23-6.4-4.3c-2.47-1.07-5.1-1.6-7.9-1.6c-2.8,0-5.43,0.53-7.9,1.6c-2.47,1.07-4.6,2.5-6.4,4.3
+    c-1.8,1.8-3.23,3.93-4.3,6.4c-1.07,2.47-1.6,5.1-1.6,7.9v23.4v49.4h-6.6v-49.4v-23.4v-70.6h6.6v53c2.53-2.93,5.53-5.2,9-6.8
+    C162.26,194.42,166,193.62,170,193.62z"/>
+  <path class="st1" d="M253.2,238.42c-1.2,0.4-3.2,1.17-6,2.3c-2.8,1.13-5.83,2.3-9.1,3.5c-3.27,1.2-6.43,2.4-9.5,3.6
+    c-3.07,1.2-5.47,2.07-7.2,2.6v17c0,2.8,0.53,5.43,1.6,7.9c1.07,2.47,2.5,4.6,4.3,6.4s3.93,3.23,6.4,4.3c2.47,1.07,5.1,1.6,7.9,1.6
+    c2.8,0,5.43-0.53,7.9-1.6c2.47-1.07,4.6-2.5,6.4-4.3c1.8-1.8,3.23-3.93,4.3-6.4c1.07-2.46,1.6-5.1,1.6-7.9h6.6
+    c0,3.73-0.7,7.23-2.1,10.5c-1.4,3.27-3.3,6.1-5.7,8.5c-2.4,2.4-5.23,4.3-8.5,5.7c-3.27,1.4-6.77,2.1-10.5,2.1
+    c-3.73,0-7.23-0.7-10.5-2.1c-3.27-1.4-6.1-3.3-8.5-5.7c-2.4-2.4-4.3-5.23-5.7-8.5c-1.4-3.27-2.1-6.77-2.1-10.5v-47
+    c0-3.73,0.7-7.23,2.1-10.5c1.4-3.27,3.3-6.1,5.7-8.5c2.4-2.4,5.23-4.3,8.5-5.7c3.27-1.4,6.77-2.1,10.5-2.1
+    c3.73,0,7.23,0.7,10.5,2.1c3.27,1.4,6.1,3.3,8.5,5.7c2.4,2.4,4.3,5.23,5.7,8.5c1.4,3.27,2.1,6.7,2.1,10.3v0.2
+    C268.4,228.68,263.33,234.68,253.2,238.42z M241.6,200.22c-2.8,0-5.43,0.53-7.9,1.6c-2.47,1.07-4.6,2.5-6.4,4.3
+    c-1.8,1.8-3.23,3.93-4.3,6.4c-1.07,2.47-1.6,5.1-1.6,7.9v23c2-0.8,4.47-1.77,7.4-2.9c2.93-1.13,5.87-2.23,8.8-3.3
+    c2.93-1.07,5.63-2.07,8.1-3c2.47-0.93,4.23-1.6,5.3-2c2.4-0.93,4.8-2.33,7.2-4.2c2.4-1.87,3.6-4.47,3.6-7.8c0-2.8-0.53-5.4-1.6-7.8
+    c-1.07-2.4-2.5-4.5-4.3-6.3c-1.8-1.8-3.93-3.23-6.4-4.3C247.03,200.75,244.4,200.22,241.6,200.22z"/>
+  <path class="st1" d="M322.6,193.62v6.6h-7.8c-2.8,0-5.4,0.53-7.8,1.6c-2.4,1.07-4.54,2.5-6.4,4.3c-1.87,1.8-3.33,3.93-4.4,6.4
+    c-1.07,2.47-1.6,5.1-1.6,7.9v23.4v49.4H288v-49.4v-23.4v-19.2h-6.6v-6.6h6.6h6.6v6.6v1.6c5.07-5.87,11.6-8.93,19.6-9.2H322.6z"/>
+  <path class="st1" d="M361.4,294.22c-3.73,0-7.23-0.7-10.5-2.1c-3.27-1.4-6.1-3.3-8.5-5.7c-2.4-2.4-4.3-5.23-5.7-8.5
+    c-1.4-3.27-2.1-6.77-2.1-10.5v-47c0-3.73,0.7-7.23,2.1-10.5c1.4-3.27,3.3-6.1,5.7-8.5c2.4-2.4,5.23-4.3,8.5-5.7
+    c3.27-1.4,6.77-2.1,10.5-2.1c3.73,0,7.23,0.7,10.5,2.1c3.27,1.4,6.1,3.3,8.5,5.7c2.4,2.4,4.3,5.23,5.7,8.5
+    c1.4,3.27,2.1,6.77,2.1,10.5v47c0,3.73-0.7,7.23-2.1,10.5c-1.4,3.27-3.3,6.1-5.7,8.5c-2.4,2.4-5.23,4.3-8.5,5.7
+    C368.63,293.52,365.13,294.22,361.4,294.22z M361.4,200.22c-2.8,0-5.43,0.53-7.9,1.6c-2.47,1.07-4.6,2.5-6.4,4.3
+    c-1.8,1.8-3.23,3.93-4.3,6.4c-1.07,2.47-1.6,5.1-1.6,7.9v47c0,2.8,0.53,5.43,1.6,7.9c1.07,2.47,2.5,4.6,4.3,6.4s3.93,3.23,6.4,4.3
+    c2.47,1.07,5.1,1.6,7.9,1.6s5.43-0.53,7.9-1.6c2.46-1.07,4.6-2.5,6.4-4.3s3.23-3.93,4.3-6.4c1.07-2.46,1.6-5.1,1.6-7.9v-47
+    c0-2.8-0.53-5.43-1.6-7.9c-1.07-2.47-2.5-4.6-4.3-6.4c-1.8-1.8-3.93-3.23-6.4-4.3C366.83,200.75,364.2,200.22,361.4,200.22z"/>
+  <path class="st1" d="M495,194.62l-22.4,98.6h-9.8l-14.2-80l-14.2,80h-10l-22.2-98.6h6.8l20.2,89.6l16-89.6h6.6h0.2l16,89.6
+    l20.2-89.6H495z"/>
+</g>
+
+</svg>
+
+  </div>
+
+
+  </body>
+</html>
+
+
+
+
+
+
