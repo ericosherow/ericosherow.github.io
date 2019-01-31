@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Eric Osherow Resume</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+	<style>
+		/*wrap styles*/
+		.header {
+			position: absolute;
+			/*background-color:yellow;*/
+			width: 100%;
+			/*z-index: -1;*/
+		}
+		.footer{
+			/**/
+			width:100%;
+		} 
+		.middle-wrap {
+			width: 100%;
+			/*background-color: red;*/
+			/*z-index: -1;*/
+		}
+
+		.bottom-wrap{
+
+		}
+
+		/*text styles*/
+		.title-text{
+			text-align: center;
+			color:black;
+			font-family:Simplifica;
+			font-size:30px;
+			font-weight: bold;
+		}
+		.body-text{	
+			margin-top: 100px;
+ 
+  			margin-left: 80px;
+			color:black;
+			font-family:Simplifica;
+			font-size:30px;
+			display: block;
+			text-align: left;
+		}
+
+		/*guides*/
+		img {
+ 			width: 10%;
+ 			border-radius: 50%;
+		}
+
+				 /* Dropdown Button */
+		.dropbtn {
+		  background-color: transparent;
+		  color: transparent;
+		  padding: 16px;
+		  font-size: 16px;
+		  border: black;
+		}
+
+		/* The container <div> - needed to position the dropdown content */
+		.dropdown {
+		  position: absolute;
+		  top: 1%;
+		  left: 92.5%;
+		  transition: 1.0s;
+		}
+
+		/* Dropdown Content (Hidden by Default) */
+		.dropdown-content {
+		  display: none;
+		  position: absolute;
+		  background-color: white;
+		  opacity: 1;
+		  right: 0;
+		  min-width: 160px;
+		  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		  z-index: 1;
+		}
+
+		/* Links inside the dropdown */
+		.dropdown-content a {
+		  color: black;
+		  font-family:Simplifica;
+		  padding: 12px 16px;
+		  text-decoration: none;
+		  display: block;
+		}
+
+
+		/* Change color of dropdown links on hover */
+		.dropdown-content a:hover {background-color: grey;}
+
+		/* Show the dropdown menu on hover */
+		.dropdown:hover .dropdown-content {display: block;}
+
+		/* Change the background color of the dropdown bar when the dropdown content is shown */
+		.dropdown:hover .bar1 {transition:0.2s;background-color:#00b4ff;}
+		.dropdown:hover .bar2 {transition:0.5s;background-color:#00b4ff;}
+		.dropdown:hover .bar3 {transition:0.8s;background-color:#00b4ff;}
+
+
+		/*menu bar Container*/
+		.container {
+		  display: inline-block;
+		  cursor: pointer;
+		}
+		/*subbars*/
+		.bar1, .bar2, .bar3 {
+		  width: 40px;
+		  height: 3px;
+		  background-color: #FF00B4;
+		  margin: 8px 0;
+		  transition: 0.4s;
+		}
+
+		.line {
+		  height="210"; 
+		  width="500";
+		  stroke:rgb(255,0,0);
+		  stroke-width:2;  
+		}
+
+
+		/* Rotate first bar */
+		.change .bar1 {
+		  -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+		  transform: rotate(-45deg) translate(-9px, 6px) ;
+		}
+
+		/* Fade out the second bar */
+		.change .bar2 {
+		  opacity: 0;
+		}
+
+		/* Rotate last bar */
+		.change .bar3 {
+		  -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+		  transform: rotate(45deg) translate(-8px, -8px) ;
+		}
+
+
+	</style>
+
+
+<body>
+	<body style="background-color:#cec5b8;">
+
+	<div class="header">
+		<img src="art/Eric.jpeg" align="left">
+
+		<div class="title-text" style="margin-top: 10px;">
+			Eric Osherow <br> Eric.Osherow@tufts.edu <br>
+			561-789-0805 </div>
+
+		<div class="container" onclick="myFunction(this)">
+		  <div class="dropdown">
+		  <button class="dropbtn">
+		    <div class="bar1"></div>
+		    <div class="bar2"></div>
+		    <div class="bar3"></div>
+		  </button>
+		  <div class="dropdown-content">
+		    <div class="nav">
+		      <div class="container">
+		      <ul class="pull-right">
+		        <a href="work.html" sytle="font:Simplifica">work</a>
+		        <a href="info.html">info</a>
+		        <a href="https://github.com/ericosherow">github</a>
+		        </ul>
+		       </div>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+	</div>
+
+	<div class="middle-wrap">
+		<div class="body-text" style="font-weight: bold; font-size: 50px; left: 200px">
+
+			<br>Education<br>
+
+			<div class="body-text" style="font-style: italic; font-size: 40px; margin-top: 10px;">
+				Tufts University, Medford, Massachusetts 
+				<div class="body-text" style=" font-style: normal;margin-top: 10px;  margin-bottom: 10px;">
+					Bachelor of Arts in Philosophy & International Literary and Visual Studies<br>
+					Minor in Studio Art & Concentration in Computer Science <br> 
+				</div>
+					Forbes 30 under 30 Scholar <br>
+			</div>
+			<!-- tufts -->
+			
+				<div class="body-text" style="margin-top: 20px; margin-bottom: 10px;">
+					<u>Technical Classes Completed</u> 
+					<u1>
+						<li>Data Structures</li>
+					</u1>
+					<u1>
+						<li>Discrete Math</li>
+					</u1>
+					<u1>
+						<li>Game Design</li>
+					</u1>
+				</div>
+				<div class="body-text" style="margin-top: 20px; margin-bottom: 10px;">
+					<u>Technical Classes In Progress</u>
+					<u1>
+						<li>Human Computer Interaction</li>
+					</u1>
+					<u1>
+						<li>Web Development</li>
+					</u1>
+					<u1>
+						<li>Senior Project: Interactive Digital Art</li>
+					</u1>
+				</div>
+				<div class="body-text" style="margin-top: 20px; margin-bottom: 0px;">
+					<u>Technical Skills & Certifications</u>
+					<u1>
+						<li>Facility in C++, C#, HTML, CSS</li>
+					</u1>
+					<u1>
+						<li>Adobe Illustrator, Photoshop, InDesign, 
+						Premier </li>
+					</u1>
+					<u1>
+						<li>Unity Game/Animation Dev</li>
+					</u1>
+					<u1>
+						<li>Hubspot Inbound Marketing Certification</li>
+					</u1>
+				</div> 								
+
+			<br>Marketing, Product Management, & Consulting		
+			<div class="body-text" style="font-style: italic; font-size: 40px; margin-top: 10px;">
+				Spectrum Reach, Charter Communications,  <br>Product Marketing, Content & Categories, Intern, New York City 		
+				<div class="body-text" style=" font-style: normal;margin-top: 10px;  margin-bottom: 10px;">
+					<u1>
+						<li> Strategized with management in the development of q4 sales initiative</li>
+					</u1>
+					<u1>
+						<li>Researched, organized, and designed advertising materials  
+						</li>
+					</u1>
+					<u1>
+						<li>Focused & developed targeting strategies for advertising campaigns</li>
+					</u1>
+				</div>
+				The Perfect Granola, Marketing Consultant, Brand Strategy, Medford, MA		
+					<div class="body-text" style=" font-style: normal;margin-top: 10px;  margin-bottom: 10px;">
+						<u1>
+							<li>Developed marketing, brand strategy 
+								for startup
+							</li>
+						</u1>
+						<u1>
+							<li>Conducted market research and performed competitive analysis 
+							</li>
+						</u1>
+						<u1>
+							<li>Defined target buyer persona</li>
+						</u1>
+						<u1>
+							<li>Utilized HubSpot CRM system for lead management</li>
+						</u1>
+					</div>
+			</div>
+			<br>
+			Executive & Leadership Experience
+			<div class="body-text" style="font-style: italic; font-size: 40px; margin-top: 10px;">
+				Tufts Programming Board, TUSC Freshman, Sophomore Class Council, 			   	 
+				<div class="body-text" style=" font-style: normal;margin-top: 10px;  margin-bottom: 10px;">
+					<u1>
+						<li> Managed & Planned Marketing campaigns for from 50 to 3,000 attendees</li>
+					</u1>
+					<u1>
+						<li>Allocated approximately $60,000 marketing budget with team of four 
+						</li>
+					</u1>
+				</div>
+				Tufts University Social Collective, Programming Board Rebranding Committee Chair
+				<div class="body-text" style=" font-style: normal;margin-top: 10px;  margin-bottom: 10px;">
+					<u1>
+						<li> Developed & implemented rebranding of campus brand  </li>
+					</u1>
+					<u1>
+						<li>Planned rebranding timeline & structure of brand: sub-branding
+						</li>
+					</u1>
+				</div>	
+			</div>
+			<br> Professional Expierence 
+			<div class="body-text" style="font-style: italic; font-size: 40px; margin-top: 10px;">
+				Tufts Political Science Department, Office Assistant, 
+			
+				<div class="body-text" style=" font-style: normal;margin-top: 10px;  margin-bottom: 10px;">
+					<u1>
+						<li> Create spreadsheets, documents, and other department materials  
+						</li>
+					</u1>
+					<u1>
+						<li>Managed Phone Lines 
+						</li>
+					</u1>
+				</div>
+				Tufts University Art Gallery, Visitor Services Associate
+				<div class="body-text" style=" font-style: normal;margin-top: 10px;  margin-bottom: 10px;">
+					<u1>
+						<li> Focused Vistor relations  
+						</li>
+					</u1>
+					<u1>
+						<li>Supported gallery management: curating, overseeing, marketing, and security of exhibits
+						</li>
+					</u1>
+				</div>	
+			</div>
+		</div>		<!-- body text***top -->
+	</div>
+	<!-- middle wrap -->
+		<div class="footer">
+  			<a href="https://www.linkedin.com/in/eric-osherow/"><img src="art/LinkedIn.png" style="width:4%;padding: 30px">
+  			</a>
+		</div>
+
+
+</body>
+
+
+</html>
