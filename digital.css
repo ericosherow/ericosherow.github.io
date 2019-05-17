@@ -3,7 +3,7 @@ body{
     background-color:	#f8f8ff;
     margin: 0; 
 }
-  @font-face{
+@font-face{
     src: url("SIMPLIFICA/SIMPLIFICA Typeface.ttf");
     font-family: SIMPLIFICA;
 }
@@ -24,6 +24,7 @@ body{
 
   /* position: relative; */
   max-width: 100vw;
+  
   justify-content: center;
  
   /* background-color: red;  */
@@ -32,6 +33,41 @@ body{
   padding-bottom: 100px;  */
   z-index: 0; 
 }
+.sub-contaier {
+  margin: 0px 0px 0px 0px; 
+
+  /* position: relative; */
+  max-width: 100vw;
+  
+  text-align: center; 
+
+  /* display: block;  */
+
+  justify-content: center;
+ 
+  /* background-color: red;  */
+  /* background-image:  url(pool.jpeg);  */
+  /* padding-top: 100px; 
+  padding-bottom: 100px;  */
+
+  z-index: 0; 
+}
+.main-video
+{
+  /* max-width: 100%; */
+  /* height: 100px;  */
+  background-color: black;
+}
+.sub-video
+{
+  position: relative; 
+  padding-top: 50px; 
+  padding-bottom: 100px; 
+  
+  display: block; 
+  margin: 0 auto; 
+}
+
 .text-container
 {
   position: relative;
@@ -45,19 +81,21 @@ body{
 
 .main-bottom-left
 {
+  font-family: SIMPLIFICA; 
   position: absolute;
   bottom: 150px;
   left: 20px;
 }
 .main-sub-text
 {
+  font-family: SIMPLIFICA; 
   font-size: 3vw; 
   padding-top: 3px; 
   left: 20px; 
 }
 .tb-bottom-left
 {
-   
+  font-family: SIMPLIFICA; 
   display: block; 
   position: absolute;
   bottom: 50px;
@@ -70,6 +108,7 @@ body{
   justify-content: center; 
   position: relative;
   width: 100%;
+  /* height: 600px;  */
      
   /* height: 10%  */
 }
@@ -77,6 +116,7 @@ body{
 .main-title
 {
   background-color: red; 
+
   /* position: absolute; */
   width: 100vw; 
   z-index: 1; 
@@ -175,7 +215,7 @@ table, tr, td
   display: none;
   position: absolute;
   background-color: white;
-  opacity: 0.7;
+  opacity: 0.8;
   left: 0;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -193,7 +233,7 @@ table, tr, td
 
 
 /* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: grey;}
+.dropdown-content a:hover {background-color: #00b4ff;}
 
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {display: block;}
@@ -243,11 +283,42 @@ table, tr, td
   transform: rotate(45deg) translate(-8px, -8px) ;
 }
 
+.main-text
+{
+  padding-top: 100px; 
+  padding-bottom: 50px; 
+  color: black; 
+  text-align: center; 
+  font-family: Simplifica;
+  font-size: 70px; 
+}
+.main-text-left
+{
+  /* padding-top: 100px;  */
+  padding-bottom: 50px; 
+  padding-left: 100px; 
+  color: black; 
+  text-align: left; 
+  display: inline-block; 
+  font-family: Simplifica;
+  font-size: 50px; 
+}
 .titleclass {
   text-align:right;
   color:black;
   font-family:Simplifica;
-  font-size:450%;
+  font-size: 450%;
+}
+.png{
+  padding: 50px; 
+  width: 10%; 
+  display: block; 
+  margin: 0 auto; 
+}
+footer
+{
+  height: 2px; 
+  background-color: cyan; 
 }
 
 
