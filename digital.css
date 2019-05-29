@@ -132,6 +132,26 @@ body{
    
 }
 
+.table-img-singular
+{
+  object-fit: cover;
+
+  width: 90vw;
+  height: 40vw;
+  
+  margin: 10px 0px 10px 0px; 
+   
+}
+.singular-table-text
+{
+  font-family: SIMPLIFICA; 
+  display: block; 
+  position: absolute;
+  bottom: 50px;
+  left: 30px;
+  font-size: 7vw; 
+}
+
 
 table, tr, td
 {  
