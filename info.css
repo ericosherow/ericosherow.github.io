@@ -50,11 +50,16 @@
     padding-bottom: 100px;  */
     z-index: 0; 
   }
-  .sub-container-three{
+  .sub-container-
+  {
 
     min-width:50%; 
     /* background-color: green;  */
   }
+  .slideshow{
+    max-height: 50%;
+  }
+
   .sub-container-four {
     padding-top: 100px; 
     max-width: 100%;
