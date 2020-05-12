@@ -7,6 +7,31 @@ body{
     src: url("SIMPLIFICA/SIMPLIFICA Typeface.ttf");
     font-family: SIMPLIFICA;
 }
+h1{
+  font-family: SIMPLIFICA;
+  font-size: 70px;
+  color: #14485b;
+}
+h2{
+  padding-left: 16.5%;
+  font-family: SIMPLIFICA;
+  padding-right: 2px ;
+  font-size: 40px;
+  color: black;
+}
+h3{
+  padding: 10px; 
+  font-family: SIMPLIFICA;
+  font-size: 40px;
+  color: #0793cf;
+}
+h4{
+  
+  font-family: SIMPLIFICA;
+
+  font-size: 40px;
+  color: black;
+}
 .header
 {    
     /* position: absolute; */
@@ -18,12 +43,26 @@ body{
     z-index: 1;
 }
 
+.header2
+{    
+    /* position: absolute; */
+
+    min-width: 100%; 
+    
+    background-color:#004772; 
+  
+    z-index: 1;
+}
+
+
+
 
 .main-container {
   margin: 0px 0px 0px 0px; 
 
   /* position: relative; */
   max-width: 100vw;
+  
   
   /* justify-content: center; */
  
@@ -33,11 +72,12 @@ body{
   padding-bottom: 100px;  */
   z-index: 0; 
 }
-.sub-contaier {
+
+.mid-container {
   margin: 0px 0px 0px 0px; 
 
   /* position: relative; */
-  max-width: 100vw;
+  /* max-width: 100vw; */
   
   text-align: center; 
 
@@ -52,11 +92,33 @@ body{
 
   z-index: 0; 
 }
+.sub-container {
+  margin: 0px 0px 0px 0px; 
+
+  /* position: relative; */
+  /* max-width: 100vw; */
+  
+  text-align: center; 
+
+  /* display: block;  */
+
+  justify-content: center;
+  z-index: 0; 
+  width: 100%; 
+  /* height: 30vw;   */
+  background-color: #004772;
+}
+
+.sub-img{
+  object-fit: cover;
+  width: 100vw;
+  height: 30vw; 
+}
 .main-video
 {
   /* max-width: 100%; */
   /* height: 100px;  */
-  background-color: black;
+  /* background-color: whitesmoke; */
 }
 .sub-video
 {
@@ -108,7 +170,7 @@ body{
   justify-content: center; 
   position: relative;
   width: 100%;
-  /* height: 600px;  */
+  
      
   /* height: 10%  */
 }
@@ -124,6 +186,16 @@ body{
 .table-img
 {
   object-fit: cover;
+
+  max-width: 40vw;
+  height: 40vw; 
+  
+  margin: 10px 0px 10px 0px; 
+   
+}
+.table-img-fit
+{
+  object-fit: fill;
 
   max-width: 40vw;
   height: 40vw; 
@@ -151,6 +223,28 @@ body{
   left: 30px;
   font-size: 5vw; 
 }
+.singular-table-text-black
+{
+  font-family: SIMPLIFICA; 
+  display: block; 
+  position: absolute;
+  bottom: 20px;
+  left: 30px;
+  font-size: 5vw; 
+  background-color: whitesmoke;
+  opacity: 70%;
+  color: black; 
+}
+
+.sub-container-text
+{
+  font-family: SIMPLIFICA; 
+  display: block; 
+  position: absolute;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  font-size: 5vw; 
+}
 
 
 table, tr, td
@@ -160,10 +254,23 @@ table, tr, td
 
 .table-content
 { 
+    
     text-align: center;
     /* align-content: center;  */
-    padding-bottom: 50px;
-    padding-top: 50px; 
+    padding-bottom: 30px;
+    padding-top: 30px; 
+    padding-left: 5vw; 
+    padding-right: 5vw;
+    /* margin: 50px;  */
+    /* background-image: url("imgs/charity2.jpg"); */
+}
+.map-table-content
+{ 
+    
+    text-align: center;
+    /* align-content: center;  */
+    padding-bottom: 10%;
+    padding-top: 1x0px; 
     padding-left: 5vw; 
     padding-right: 5vw;
     /* margin: 50px;  */
@@ -312,12 +419,34 @@ table, tr, td
   font-family: Simplifica;
   font-size: 70px; 
 }
+.main-text-white
+{
+  padding-top: 50px; 
+  padding-bottom: 50px; 
+  color: whitesmoke; 
+  text-align: center; 
+  font-family: Simplifica;
+  font-size: 70px; 
+}
 .main-text-left
 {
   /* padding-top: 100px;  */
   padding-bottom: 50px; 
-  padding-left: 100px; 
+  padding-left: 50px; 
+  padding-right: 50px;
   color: black; 
+  text-align: left; 
+  display: inline-block; 
+  font-family: Simplifica;
+  font-size: 50px; 
+}
+.main-text-left-white
+{
+  /* padding-top: 100px;  */
+  padding-bottom: 50px; 
+  padding-left: 50px; 
+  padding-right: 50px;
+  color: white; 
   text-align: left; 
   display: inline-block; 
   font-family: Simplifica;
@@ -335,6 +464,114 @@ table, tr, td
   display: block; 
   margin: 0 auto; 
 }
+.sea-png
+{
+    position: relative;
+    padding: 10px; 
+    width: 20%; 
+    display: block;
+    margin: 0 auto; 
+
+}
+.col-png{
+  object-fit: cover;
+  max-width: 100%;
+  height: 33.33vw;  
+  /* padding-top: 10px;  */
+  padding-bottom: 10px;
+}
+.col-png-fill{
+  object-fit: fill;
+  max-width: 33vw;
+  max-height: 33.33vw; 
+  /* padding-top: 10px;  */
+  padding-bottom: 10px;
+}
+.john-img {
+  width: 30vw; 
+  border-radius: 50%;
+}
+
+a:link, a:visited {
+  text-decoration: none;
+  color:#0793cf; 
+}
+.link-font{
+  color:white;
+  font-family:Simplifica;
+  font-size: 60%;
+  text-decoration: none;
+}
+
+.link-font-blue{
+  color:#0793cf;
+  font-family:Simplifica;
+  font-size: 60%;
+  text-decoration: none;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  /* padding: 10px; */
+  /* background-color: black; */
+  
+}
+.column-50 {
+  float: left;
+  width: 50%;
+  /* padding: 10px; */
+  /* background-color: black; */
+  
+}
+.word-column1 {
+  float: left;
+  width: 33.33%;
+  /* padding: 10px; */
+  height: 150px;
+  background-color: #0b4e66;
+}
+.word-column2 {
+  float: left;
+  width: 33.33%;
+  /* padding: 10px; */
+  height: 150px;
+  background-color: #0793cf;
+}
+.word-column3 {
+  float: left;
+  width: 33.33%;
+  /* padding: 10px; */
+  height: 150px;
+  background-color: #00b4ff;
+}
+
+.word-column1-50 {
+  float: left;
+  width: 50%;
+  /* padding: 10px; */
+  height: 150px;
+  background-color: #0793cf;
+}
+.word-column2-50 {
+  float: left;
+  width: 50%;
+  /* padding: 10px; */
+  height: 150px;
+  background-color: #004772;
+}
+
+
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+</head>
+<body>
 footer
 {
   height: 2px; 
