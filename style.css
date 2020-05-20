@@ -14,11 +14,19 @@ body {
 	display: table;
 }
 .wrapper {
+		padding-top: 5px;
+		padding-bottom: 5px;
+		padding-left: 25px;
+		padding-right: 25px; 
 		position: absolute;
 		top: 45%;
 		left: 50%;
 		transform: translate(-50%,-50%);
 		width: 60%;
+		border-radius: 65px;
+		background: linear-gradient(45deg, #161616, #131313);
+		box-shadow:  41px -41px 82px #0b0b0b, 
+             -41px 41px 82px #1f1f1f;
 }
 .eric-wrap{
 	position: fixed;
@@ -68,6 +76,7 @@ path {
 		left: 10%;
 		transform: translate(-50%,-50%);
 		width: 5%;
+		
 
 }
 .wrapper-icon-right {
@@ -104,7 +113,8 @@ path {
     top: 20%;
     left: 90%;
     transform: translate(-70%,-70%);
-    width: 30%;
+	width: 30%;
+	border-radius: 65px;
 }
 
 .text-wrapper-middle {
@@ -119,7 +129,11 @@ path {
     top: 90%;
     left: 90%;
     transform: translate(-70%,-70%);
-    width: 30%;
+	width: 30%;
+	/* border-radius: 65px;
+	background: linear-gradient(45deg, #131313, #161616);
+	box-shadow:  15px -15px 30px #0b0b0b, 
+             -15px 15px 30px #1f1f1f; */
 }
 
 /*/* hover */
